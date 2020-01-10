@@ -1,0 +1,17 @@
+<script type="text/javascript">
+function sumInput(){
+    let numbers = []
+    while(true){
+        let value = prompt("Masukkan Angka", 0);
+        if(value === "=")
+        break;
+        numbers.push(+value)
+    }
+    let num = 0;
+    for(let i = 0; i < numbers.length; i++){
+        num += numbers[i]
+    }
+    return num
+}
+alert(sumInput())
+</script>
