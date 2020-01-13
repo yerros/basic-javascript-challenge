@@ -1,0 +1,19 @@
+<input type="text" id="input" value="Some array...">
+<button onclick="addArr()">In</button>
+<button onclick="removeArr()">Out</button>
+
+<p id="result"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("result").innerHTML = fruits;
+
+function addArr() {
+  fruits.push("Kiwi");
+  document.getElementById("result").innerHTML = fruits;
+}
+</script>
